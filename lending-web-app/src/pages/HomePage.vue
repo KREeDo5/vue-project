@@ -1,13 +1,23 @@
 <script setup>
-import { onMounted } from 'vue'
-
-onMounted(async () => {})
+import FooterComponent from '../components/home/FooterComponent.vue'
+import Advantages from '../components/home/Advantages.vue'
+import Courses from '../components/home/Courses.vue'
+import AboutSchool from '../components/home/AboutSchool.vue'
+import HeroSection from '../components/home/HeroSection.vue'
+import HowWeLearn from '../components/home/HowWeLearn.vue'
 </script>
 
 <template>
-  <div class="h-screen bg-cover bg-center" style="background-image: url('/background.jpg.webp')">
-    <h1>This is an home page</h1>
+  <div
+    class="bg-cover bg-center"
+    style="background-image: url('/background.jpg.webp'); background-attachment: fixed"
+  >
+    <HeroSection />
+    <AboutSchool />
+    <HowWeLearn />
+    <Courses />
+    <Advantages />
   </div>
-</template>
 
-<style></style>
+  <FooterComponent />
+</template>
