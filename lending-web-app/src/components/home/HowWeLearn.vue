@@ -7,9 +7,9 @@ const QUOTE = 'Мы любим свое дело и хотим помочь ва
 </script>
 
 <template>
-  <section class="py-32 bg-base-grey">
-    <div class="h-[620px] xl:h-[310px] flex flex-col xl:flex-row max-w-lg xl:max-w-5xl mx-auto">
-      <div class="h-[310px] xl:h-full w-full xl:w-1/2 mb-8 xl:mb-0 xl:mr-10">
+  <section class="py-16 xl:py-32 bg-base-light-grey">
+    <div class="h-[680px] xl:h-[340px] flex flex-col xl:flex-row max-w-lg xl:max-w-6xl mx-auto">
+      <div class="h-[340px] xl:h-full w-full xl:w-1/2 mb-8 xl:mb-0 xl:mr-10">
         <img
           src="/how-we-learn.jpg.webp"
           alt="how-we-learn"
@@ -17,13 +17,13 @@ const QUOTE = 'Мы любим свое дело и хотим помочь ва
         />
       </div>
 
-      <div class="h-[310px] xl:h-full w-full xl:w-1/2 flex flex-col justify-between">
+      <div class="h-[340px] xl:h-full w-full xl:w-1/2 flex flex-col justify-between">
         <div>
-          <h2 class="text-3xl xl:text-4xl font-w700 mb-8">{{ TITLE }}</h2>
+          <h2 class="text-3xl xl:text-4xl font-w600 mb-8">{{ TITLE }}</h2>
           <p class="text-lg text-gray-700">
             {{ DESCRIPTION }}
           </p>
-          <p class="text-lg text-gray-700 italic">
+          <p class="text-lg text-gray-700 italic mr-10">
             {{ QUOTE }}
           </p>
         </div>

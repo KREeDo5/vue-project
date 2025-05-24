@@ -1,5 +1,5 @@
 <script setup>
-import AppCard from '../core/AppCard.vue'
+import AppCard from '@/components/core/AppCard.vue'
 
 const ABOUT_TITLE =
   'Мы создали эту школу, чтобы помочь вам увереннее разговаривать на английском языке!'
@@ -29,7 +29,7 @@ const cards = [
 </script>
 
 <template>
-  <div class="bg-white py-36 flex flex-col items-center">
+  <div class="bg-white py-10 xl:py-36 flex flex-col items-center">
     <div class="max-w-4xl mx-auto text-center flex flex-col items-center mb-20">
       <p class="text-3xl font-w600 mb-8 leading-[48px]">
         {{ ABOUT_TITLE }}
@@ -40,7 +40,7 @@ const cards = [
       </p>
     </div>
 
-    <div class="max-w-6xl grid md:grid-cols-3 gap-40">
+    <div class="max-w-xl md:max-w-3xl xl:max-w-6xl grid md:grid-cols-3 md:gap-10 xl:gap-40">
       <AppCard
         v-for="card in cards"
         :key="card.id"
