@@ -6,6 +6,7 @@ import AboutSchool from '@/components/home/AboutSchool.vue'
 import HeroSection from '@/components/home/HeroSection.vue'
 import HowWeLearn from '@/components/home/HowWeLearn.vue'
 import LearnSteps from '@/components/home/LearnSteps.vue'
+import Statistics from '@/components/home/Statistics.vue'
 </script>
 
 <template>
@@ -17,8 +18,9 @@ import LearnSteps from '@/components/home/LearnSteps.vue'
     <AboutSchool />
     <HowWeLearn />
     <LearnSteps />
-    <Courses />
-    <Advantages />
+    <Statistics />
+    <!-- <Courses /> -->
+    <!-- <Advantages /> -->
   </div>
 
   <FooterComponent />

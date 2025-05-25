@@ -7,7 +7,7 @@ const BUTTON_TEXT = 'Попробовать бесплатно'
 
 <template>
   <div
-    class="h-screen flex flex-col justify-center items-center bg-gradient-to-b from-base-dark-blue/50 to-base-blue/50"
+    class="h-screen flex flex-col justify-center items-center bg-gradient-to-b from-base-gradient-blue/70 to-base-gradient-dark-blue/70"
   >
     <div class="text-center max-w-sm xl:max-w-4xl lg:max-w-xl md:max-w-md">
       <p class="text-6xl font-w600 text-white leading-[70px] mb-10">{{ TITLE }}</p>

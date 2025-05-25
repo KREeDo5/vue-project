@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="py-16 bg-base-grey">
+  <div class="py-16 bg-base-grey">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-12">Почему выбирают нашу школу</h2>
 
@@ -73,5 +73,5 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>

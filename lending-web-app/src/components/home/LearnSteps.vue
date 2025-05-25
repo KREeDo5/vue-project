@@ -24,7 +24,7 @@ const steps = [
 </script>
 
 <template>
-  <section class="py-12 lg:py-24 bg-white flex flex-col items-center">
+  <div class="py-12 lg:py-24 bg-white flex flex-col items-center">
     <p class="text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-10 lg:mb-20">
       {{ TITLE }}
     </p>
@@ -46,5 +46,5 @@ const steps = [
     >
       {{ BUTTON_TEXT }}
     </button>
-  </section>
+  </div>
 </template>

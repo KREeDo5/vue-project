@@ -9,6 +9,8 @@ export default {
         'base-blue': '#7BC8FF',
         'base-light-blue': '#CFEBFF',
         'base-dark-blue': '#318AC9',
+        'base-gradient-blue': '#242f72',
+        'base-gradient-dark-blue': '#0c80b1',
       },
     },
   },
