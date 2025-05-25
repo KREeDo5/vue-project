@@ -1,20 +1,12 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-  <!-- Футер -->
   <footer class="bg-blue-900 text-white py-12">
     <div class="container mx-auto px-4">
       <div class="grid md:grid-cols-4 gap-8">
         <div>
           <h3 class="text-xl font-bold mb-4">English School</h3>
           <p class="mb-4">Эффективное обучение английскому языку для взрослых и детей</p>
-          <div class="flex space-x-4">
-            <!-- <a href="#"><img src="/facebook.svg" alt="Facebook" class="h-6" /></a>
-              <a href="#"><img src="/instagram.svg" alt="Instagram" class="h-6" /></a>
-              <a href="#"><img src="/telegram.svg" alt="Telegram" class="h-6" /></a> -->
-          </div>
         </div>
 
         <div>
@@ -30,8 +22,8 @@
         <div>
           <h4 class="font-bold mb-4">Контакты</h4>
           <address class="not-italic">
-            <p class="mb-2">г. Москва, ул. Примерная, 123</p>
-            <p class="mb-2">+7 (123) 456-78-90</p>
+            <p class="mb-2">г. Йошкар-Ола, ул. Машиностроителей, 15</p>
+            <p class="mb-2">+7 (999) 999-99-99</p>
             <p>info@english-school.ru</p>
           </address>
         </div>
@@ -48,7 +40,7 @@
       </div>
 
       <div class="border-t border-blue-800 mt-8 pt-8 text-center text-sm">
-        <p>© 2025 Батанова Анна.</p>
+        <p>© 2025 Батанова Анна - СТ22.</p>
       </div>
     </div>
   </footer>

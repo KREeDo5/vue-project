@@ -36,6 +36,3 @@ export default {
 }
 </script>
 
-<style scoped>
-/* Если нужны кастомные анимации, можно оставить их здесь */
-</style>
