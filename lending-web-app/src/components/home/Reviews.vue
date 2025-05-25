@@ -190,7 +190,7 @@ export default {
         Что о нас говорят студенты?
       </h2>
 
-      <div class="relative max-w-7xl mx-auto">
+      <div class="relative max-w-8xl mx-auto">
         <!-- Кнопки навигации -->
         <button
           @click="prevTestimonial"
@@ -251,7 +251,7 @@ export default {
                   <img
                     :src="testimonial.avatar"
                     :alt="testimonial.author"
-                    class="w-20 h-12 rounded-full object-cover mr-4"
+                    class="w-12 h-12 rounded-full object-cover mr-4"
                   />
                   <div>
                     <p class="text-lg font-medium text-gray-800">{{ testimonial.author }}</p>
