@@ -7,6 +7,7 @@ import HeroSection from '@/components/home/HeroSection.vue'
 import HowWeLearn from '@/components/home/HowWeLearn.vue'
 import LearnSteps from '@/components/home/LearnSteps.vue'
 import Statistics from '@/components/home/Statistics.vue'
+import Reviews from '@/components/home/Reviews.vue'
 
 import { ref, onMounted, onUnmounted } from 'vue'
 
@@ -39,6 +40,7 @@ const scrollToTop = () => {
     <HowWeLearn />
     <LearnSteps />
     <Statistics />
+    <Reviews />
     <!-- <Courses /> -->
     <!-- <Advantages /> -->
   </div>
