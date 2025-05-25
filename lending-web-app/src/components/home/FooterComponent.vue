@@ -1,4 +1,10 @@
-<script setup></script>
+<script setup>
+const emit = defineEmits(['signup'])
+
+const handleSignup = () => {
+  emit('signup')
+}
+</script>
 
 <template>
   <footer class="bg-blue-900 text-white py-12">
@@ -31,6 +37,7 @@
         <div>
           <h4 class="font-bold mb-4">Записаться</h4>
           <button
+            @click="handleSignup"
             class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-2 px-6 rounded-full mb-4 transition duration-300"
           >
             Пробный урок

@@ -6,14 +6,20 @@ import HowWeLearn from '@/components/home/HowWeLearn.vue'
 import LearnSteps from '@/components/home/LearnSteps.vue'
 import Statistics from '@/components/home/Statistics.vue'
 import Reviews from '@/components/home/Reviews.vue'
-import Individual from '@/components/home/Individual.vue'
+import IndividualTeacher from '@/components/home/IndividualTeacher.vue'
+import SignupModal from '@/components/core/AppModal.vue'
 
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const showScrollButton = ref(false)
+const modal = ref(null)
 
 const handleScroll = () => {
   showScrollButton.value = window.scrollY > window.innerHeight
+}
+
+const openSignupModal = () => {
+  modal.value.openModal()
 }
 
 onMounted(() => {
@@ -34,16 +40,16 @@ const scrollToTop = () => {
     class="bg-cover bg-center"
     style="background-image: url('/background.jpg.webp'); background-attachment: fixed"
   >
-    <HeroSection />
+    <HeroSection @signup="openSignupModal" />
     <AboutSchool />
-    <HowWeLearn />
-    <LearnSteps />
+    <HowWeLearn @signup="openSignupModal" />
+    <LearnSteps @signup="openSignupModal" />
     <Statistics />
     <Reviews />
-    <Individual />
+    <IndividualTeacher @signup="openSignupModal" />
   </div>
 
-  <FooterComponent />
+  <FooterComponent @signup="openSignupModal" />
   <!-- Кнопка прокрутки вверх -->
   <button
     v-if="showScrollButton"
@@ -52,4 +58,7 @@ const scrollToTop = () => {
   >
     <img src="/icons/arrow-up.svg" alt="icon" class="w-8 h-8" />
   </button>
+
+  <!-- Модальное окно -->
+  <SignupModal ref="modal" />
 </template>

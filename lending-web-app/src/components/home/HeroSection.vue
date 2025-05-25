@@ -1,4 +1,10 @@
 <script setup>
+const emit = defineEmits(['signup'])
+
+const handleSignup = () => {
+  emit('signup')
+}
+
 const TITLE = 'Учите английский онлайн'
 const DESCRIPTION =
   'Оттачивайте английский с лучшими преподавателями и носителями языка — это комфортно и доступно.'
@@ -15,6 +21,7 @@ const BUTTON_TEXT = 'Попробовать бесплатно'
         {{ DESCRIPTION }}
       </p>
       <button
+        @click="handleSignup"
         class="text-sm font-w700 bg-white hover:bg-base-light-blue text-base-dark-blue py-4 px-12 rounded-full transition duration-300"
       >
         {{ BUTTON_TEXT }}

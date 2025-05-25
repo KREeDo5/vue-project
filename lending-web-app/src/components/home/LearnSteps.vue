@@ -1,4 +1,10 @@
 <script setup>
+const emit = defineEmits(['signup'])
+
+const handleSignup = () => {
+  emit('signup')
+}
+
 const TITLE = 'Начать учить английский - просто'
 const BUTTON_TEXT = 'Попробовать бесплатно'
 
@@ -42,6 +48,7 @@ const steps = [
     </div>
 
     <button
+      @click="handleSignup"
       class="text-sm font-w700 bg-white hover:bg-base-light-blue text-base-dark-blue py-4 px-12 border border-base-dark-blue rounded-full transition duration-300"
     >
       {{ BUTTON_TEXT }}
